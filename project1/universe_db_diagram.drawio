@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2024-06-05T21:58:01.301Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="6ZRaqaOZ8EbH7cpCXQ1x" version="24.4.14" type="device">
+  <diagram id="bpdfYqESJS62GjtHoe4A" name="Page-5">
+    <mxGraphModel dx="1674" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-6" value="Galaxy &#xa; (id, name, desc, age, galaxy_type, distance)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="110" width="336" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-7" value="Star &#xa; (id, name, desc, age, size, is_alive)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="102" y="229" width="271" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-8" value="Planet &#xa; (name, desc, n_moon, size, rotation_period)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="370" width="337" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-9" value="Moon &#xa; (id, name, desc, size, rotation_period, visited_by_human)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="510" width="433" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-10" value="Has_life &#xa; (id, name, kind_life, year_discovery)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="423" y="229" width="281" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-11" value="|1:M" style="curved=1;startArrow=none;endArrow=block;exitX=0.49939546130952384;exitY=1;entryX=0.5010954797047971;entryY=0;rounded=0;" edge="1" parent="1" source="KW7u7dV2MVHS9JNJ_UPU-6" target="KW7u7dV2MVHS9JNJ_UPU-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-12" value="|1:M" style="curved=1;startArrow=none;endArrow=block;exitX=0.5010954797047971;exitY=1;entryX=0.4645392606226466;entryY=0;rounded=0;" edge="1" parent="1" source="KW7u7dV2MVHS9JNJ_UPU-7" target="KW7u7dV2MVHS9JNJ_UPU-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="238" y="314" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-13" value="|1:M" style="startArrow=none;endArrow=block;exitX=0.4984119992581602;exitY=1;rounded=0;" edge="1" parent="1" source="KW7u7dV2MVHS9JNJ_UPU-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="248" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-15" value="|M:1" style="curved=1;startArrow=none;endArrow=block;exitX=0.30765173618379743;exitY=1;entryX=0.7095650574769967;entryY=0;rounded=0;" edge="1" parent="1" source="KW7u7dV2MVHS9JNJ_UPU-10" target="KW7u7dV2MVHS9JNJ_UPU-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="434" y="314" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KW7u7dV2MVHS9JNJ_UPU-16" value="|M:1" style="startArrow=none;endArrow=block;exitX=0.5848501656000477;exitY=1;entryX=0.781;entryY=-0.04;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KW7u7dV2MVHS9JNJ_UPU-10" target="KW7u7dV2MVHS9JNJ_UPU-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
